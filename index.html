@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#080913" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="description" content="ОРИХ ЕКСПОЛИД — рофельный джейлбрейк для мафона. Мемный симулятор без настоящего взлома." />
+  <title>ОРИХ ЕКСПОЛИД — ДЖАЛАБАРАК 3000 • xanaxx55</title>
+  <style>
+    :root{color-scheme:dark;--bg:#080913;--card:#131524;--line:#292c42;--text:#f7f7ff;--muted:#9498b4;--pink:#e879ff;--cyan:#58e6ed;--green:#4df6b3;--round:24px}
+    *{box-sizing:border-box}
+    html{height:100%}
+    body{min-height:100%;margin:0;overflow-x:hidden;color:var(--text);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:radial-gradient(ellipse at 14% -15%,#43205a90,transparent 42%),radial-gradient(ellipse at 96% 93%,#09375280,transparent 45%),var(--bg)}
+    body::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.18;background-image:linear-gradient(#ffffff12 1px,transparent 1px),linear-gradient(90deg,#ffffff12 1px,transparent 1px);background-size:34px 34px;mask-image:linear-gradient(180deg,#000,transparent 80%)}
+    .shell{position:relative;max-width:940px;margin:0 auto;padding:24px clamp(18px,5vw,45px) 42px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:-.04em;font-size:19px}.logo{width:36px;height:36px;display:grid;place-items:center;border-radius:12px;background:linear-gradient(145deg,#e879ff,#796fff);box-shadow:0 0 24px #e879ff45;color:#0e0c1d}.logo svg{width:21px;height:21px}
+    .pill{font-size:11px;font-weight:700;letter-spacing:.11em;color:var(--green);padding:8px 11px;border:1px solid #4df6b350;border-radius:40px;background:#4df6b30d;white-space:nowrap}.pill::before{content:"";display:inline-block;width:6px;height:6px;margin-right:7px;border-radius:50%;background:currentColor;box-shadow:0 0 10px currentColor;vertical-align:1px}
+    main{display:grid;grid-template-columns:1fr 1.1fr;gap:36px;align-items:center;min-height:calc(100svh - 138px);padding:24px 0}
+    .eyebrow{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--cyan);font-weight:800;margin:0 0 15px}.intro h1{font-size:clamp(46px,6vw,74px);letter-spacing:-.075em;line-height:1.04;margin:0}.intro h1 span{display:block;background:linear-gradient(100deg,#fff,#c781ff 55%,#64efef);background-clip:text;-webkit-background-clip:text;color:transparent}.intro>p.desc{font-size:15px;line-height:1.8;color:var(--muted);max-width:365px;margin:22px 0 0}.chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:27px}.chip{display:inline-flex;gap:7px;align-items:center;padding:9px 11px;border:1px solid #ffffff18;border-radius:11px;background:#ffffff06;color:#c5c7d9;font-size:12px}.chip b{color:#e0b0ff}
+    .device{position:relative;background:#10121f;border:1px solid #373951;border-radius:34px;padding:27px;box-shadow:0 35px 90px #0009,inset 0 1px #ffffff0c;overflow:hidden}.device::after{content:"";position:absolute;inset:0;pointer-events:none;border-radius:inherit;box-shadow:inset 0 0 65px #e879ff07}
+    .device-top{display:flex;justify-content:space-between;align-items:center;color:#969ab4;font-size:12px;font-weight:650}.device-top .dots{display:flex;gap:5px}.dots i{display:block;width:6px;height:6px;border-radius:50%;background:#393d56}.dots i:first-child{background:#f18baa}.dots i:nth-child(2){background:#f5c66e}.dots i:nth-child(3){background:#57d3b1}
+    .orb{width:126px;height:126px;display:grid;place-items:center;border-radius:32px;margin:33px auto 22px;background:linear-gradient(135deg,#d774ff,#925fff 55%,#48c8f4);box-shadow:0 0 0 11px #d774ff0a,0 0 66px #bd68ff54;transform:rotate(-6deg);transition:transform .6s}.orb svg{width:67px;height:67px;filter:drop-shadow(0 3px 8px #52297190);transform:rotate(6deg)}
+    .device h2{font-size:25px;line-height:1.2;margin:0;text-align:center;letter-spacing:-.04em}.subtitle{text-align:center;color:var(--muted);font-size:13px;margin:10px 0 22px;line-height:1.5}.progress-wrap{margin:0 0 18px;display:none}.progress-line{display:flex;justify-content:space-between;font-size:12px;margin-bottom:10px;color:#cfd2e6}.progress-line strong{color:var(--green);font-variant-numeric:tabular-nums}.progress-track{height:9px;background:#25263b;border-radius:30px;overflow:hidden}.progress-fill{height:100%;width:0;background:linear-gradient(90deg,#a35eff,#fc7ef2,#68f0e8);border-radius:inherit;transition:width .32s ease;box-shadow:0 0 16px #e879ff95}
+    .terminal{display:none;height:190px;overflow:auto;scrollbar-width:thin;background:#080b13;border:1px solid #292d3c;border-radius:15px;padding:14px 13px;margin:17px 0 0;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:11px;line-height:1.85;color:#91efa8}.terminal .dim{color:#68728b}.terminal .warn{color:#fbbf8d}.terminal .special{color:#d49cfb}.terminal .cursor{display:inline-block;width:6px;height:11px;background:#98f3c3;animation:blink 1s steps(2) infinite;vertical-align:-1px}@keyframes blink{50%{opacity:0}}
+    .btn{display:flex;justify-content:center;align-items:center;width:100%;min-height:56px;gap:10px;border:0;border-radius:16px;background:linear-gradient(95deg,#e987ff,#a779ff);color:#120c1f;font-size:15px;font-weight:850;cursor:pointer;box-shadow:0 12px 30px #ad68fd3c;transition:filter .2s,transform .2s;touch-action:manipulation}.btn:hover:not(:disabled){filter:brightness(1.12);transform:translateY(-2px)}.btn:active:not(:disabled){transform:translateY(1px)}.btn:disabled{opacity:.64;cursor:default}.btn svg{width:17px;height:17px}
+    .status{margin-top:14px;color:#747a95;text-align:center;font-size:11px;line-height:1.7}.notice{font-size:12px;line-height:1.6;color:#7e8198;margin:25px 0 0}.notice strong{color:#c0c0d0}
+    .reveal{display:none;text-align:center;animation:pop .5s cubic-bezier(.2,.85,.2,1.2)}@keyframes pop{from{opacity:0;transform:translateY(15px) scale(.95)}to{opacity:1;transform:none}}.reveal .emoji{font-size:64px;margin:9px 0 10px}.reveal h2{font-size:clamp(25px,4vw,37px);overflow-wrap:anywhere;margin:9px 0;color:#f7a0ff}.reveal p{line-height:1.6;color:#bcbdd2;font-size:14px;margin-bottom:22px}.reveal small{color:#8588a5;line-height:1.7;display:block;margin:17px auto 0;max-width:320px}.restart{border:1px solid #51466e;color:#f1dafa;background:#282038;box-shadow:none}
+    footer{text-align:center;color:#6d738a;font-size:11px;line-height:1.5}footer a{color:#bbb0ef;text-decoration:none}
+    .brand{font-size:clamp(14px,2vw,19px)}.reveal .emoji{animation:bounce 900ms ease-in-out infinite alternate}@keyframes bounce{to{transform:rotate(9deg) scale(1.12)}}.device:has(.reveal[style*="block"]){border-color:#9a70e1;box-shadow:0 35px 90px #0009,0 0 48px #b36bff32}@media(max-width:760px){.shell{max-width:490px;padding-top:20px}main{display:flex;flex-direction:column;gap:28px;min-height:unset;padding:45px 0 32px}.intro{text-align:center}.intro h1{font-size:clamp(45px,12vw,68px)}.intro>p.desc{margin:17px auto 0}.chips{justify-content:center;margin-top:19px}.device{width:100%;padding:24px}.orb{width:108px;height:108px;margin:25px auto 18px;border-radius:28px}.orb svg{width:60px;height:60px}.terminal{height:175px}.notice{text-align:center;margin:20px 0 0}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+    .sound-toggle{border:1px solid #5b476f;background:#201a30;color:#ebd8ff;border-radius:12px;padding:10px 12px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;touch-action:manipulation}
+    .header-actions{display:flex;align-items:center;gap:9px;flex-wrap:wrap;justify-content:flex-end}
+    .turbo{display:none;margin-top:10px;background:#221b38;color:#dec5ff;border:1px solid #5c4785;box-shadow:none;min-height:44px;font-size:12px}
+    .audio-unlock{position:fixed;bottom:17px;left:50%;z-index:20;transform:translateX(-50%);width:min(440px,calc(100% - 26px));border:1px solid #af79ff;background:#1a1830f7;backdrop-filter:blur(12px);border-radius:17px;box-shadow:0 12px 50px #000a;padding:14px 15px;display:flex;align-items:center;gap:12px;justify-content:space-between}
+    .audio-unlock .audio-note{font-size:12px;line-height:1.5;color:#d0c9e2}.audio-unlock .audio-note strong{display:block;color:#fff;font-size:13px}
+    .audio-unlock button{padding:10px 13px;flex-shrink:0;border:0;border-radius:11px;background:#dca0ff;color:#170c22;font-weight:850;cursor:pointer;font-size:12px}
+    .music-note{margin:12px 0 0;text-align:center;font-size:11px;color:#b8abd0}
+    @media(max-width:520px){.pill{display:none}.sound-toggle{padding:8px 10px;font-size:10px}.brand{gap:6px}.audio-unlock{flex-wrap:wrap}.audio-unlock button{width:100%}}
+    /* Мобильная версия: маленькие экраны, вырезы iPhone и управление пальцами. */
+    html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-behavior:smooth}
+    button{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+    button:focus-visible{outline:3px solid #82f6e0;outline-offset:3px}
+    .intro,.device,.shell,main{min-width:0}
+    footer{display:flex;align-items:center;flex-direction:column;gap:8px;padding-top:10px;padding-bottom:12px}
+    footer .author{font-weight:850;color:#e9c0ff;font-size:13px;letter-spacing:.03em}
+    @media(max-width:760px){
+      .shell{width:100%;max-width:580px;padding:calc(14px + env(safe-area-inset-top,0px)) max(14px,env(safe-area-inset-right,0px)) calc(22px + env(safe-area-inset-bottom,0px)) max(14px,env(safe-area-inset-left,0px))}
+      header{gap:7px;min-width:0}
+      .brand{font-size:clamp(12px,3.45vw,17px);letter-spacing:-.045em;gap:7px;white-space:nowrap;min-width:0}
+      .logo{width:32px;height:32px;min-width:32px;border-radius:10px}
+      .logo svg{width:18px;height:18px}
+      .header-actions{gap:5px;flex-wrap:nowrap}
+      .sound-toggle{min-height:44px;padding:8px 10px;font-size:11px;border-radius:12px}
+      main{display:flex;flex-direction:column;gap:18px;min-height:unset;padding:23px 0 12px}
+      .intro{text-align:center;width:100%;min-width:0}
+      .eyebrow{font-size:10px;letter-spacing:.15em;margin:0 0 8px}
+      .intro h1{font-size:clamp(39px,11.4vw,64px);line-height:.99;letter-spacing:-.068em}
+      .intro>p.desc{font-size:13px;line-height:1.52;margin:12px auto 0;max-width:430px}
+      .chips{justify-content:center;gap:6px;margin-top:12px}
+      .chip{font-size:10px;padding:7px 8px;gap:4px;border-radius:9px}
+      .notice{text-align:center;font-size:10px;line-height:1.4;margin:12px auto 0;max-width:440px}
+      .device{width:100%;max-width:100%;padding:clamp(15px,4.8vw,26px);border-radius:25px}
+      .device-top{font-size:10px}
+      .orb{width:92px;height:92px;margin:22px auto 18px;border-radius:24px}
+      .orb svg{width:50px;height:50px}
+      .device h2{font-size:clamp(19px,5.5vw,26px);line-height:1.21}
+      .subtitle{font-size:12px;margin:8px 0 16px}
+      .btn{min-height:54px;padding:10px 12px;font-size:clamp(12px,3.5vw,15px);line-height:1.3;white-space:normal;text-align:center;border-radius:14px}
+      .turbo{min-height:48px;font-size:clamp(11px,3.1vw,13px)}
+      .terminal{height:170px;max-height:32dvh;font-size:10px;line-height:1.65;padding:10px;overflow-wrap:anywhere;-webkit-overflow-scrolling:touch}
+      .progress-line{font-size:11px;gap:8px}
+      .progress-line #stage{min-width:0;overflow-wrap:anywhere}
+      .reveal h2{font-size:clamp(23px,7vw,34px);line-height:1.18}
+      .reveal .emoji{font-size:54px}
+      .reveal p{font-size:13px}
+      .music-note,.status{font-size:11px;overflow-wrap:anywhere}
+      .audio-unlock{bottom:calc(12px + env(safe-area-inset-bottom,0px));width:calc(100% - 24px);max-width:420px;max-height:60dvh;overflow:auto;padding:12px 13px;border-radius:15px}
+      .audio-unlock button{min-height:44px}
+    }
+    @media(max-width:360px){
+      .shell{padding-left:max(10px,env(safe-area-inset-left,0px));padding-right:max(10px,env(safe-area-inset-right,0px))}
+      .brand{font-size:12px;gap:5px}
+      .logo{width:28px;height:28px;min-width:28px}
+      .sound-toggle{font-size:10px;padding:7px 8px}
+      .intro h1{font-size:38px}
+      .chips{gap:4px}
+      .chip{font-size:9px;padding:6px}
+      .device{padding:14px}
+    }
+    @media(max-height:570px) and (orientation:landscape){
+      .shell{max-width:930px}
+      main{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:16px;align-items:start}
+      .intro h1{font-size:clamp(30px,5vw,48px)}
+      .orb{width:65px;height:65px;margin:8px auto 10px;border-radius:17px}
+      .orb svg{width:37px;height:37px}
+      .device{padding:13px}
+      .terminal{height:95px}
+    }
+    [hidden]{display:none!important}
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header><div class="brand"><span class="logo" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m13 2-9 12h7l-1 8 10-13h-7l0-7z"/></svg></span>ОРИХ<span style="color:#ac7bff">.</span>ЕКСПОЛИД</div><div class="header-actions"><span class="pill">МАФОН НА СВЯЗИ</span><button type="button" class="sound-toggle" id="sound-toggle" aria-pressed="true">🔊 ЗВУК ВКЛ</button></div></header>
+    <main>
+      <section class="intro"><p class="eyebrow">СЕКРЕТНЫЙ ПРОЕКТ / ОРИХ-2026</p><h1>ОРИХ<br><span>ЕКСПОЛИД.</span></h1><p class="desc">Легендарный джейл для настоящего мафона. Уровень технологий: шаурма с процессором. Нажми кнопку — и начнётся магия мемов. 💀</p><div class="chips"><span class="chip">⚡ <b>МАФОН</b> 3000</span><span class="chip">👾 ОРИХ-ЯДРО</span><span class="chip">🥒 ОГУРЦЫ В КОМПЛЕКТЕ</span></div><p class="notice"><strong>Прикол:</strong> это мемный симулятор. Он ничего не устанавливает, не меняет в телефоне и не делает настоящий джейлбрейк.</p></section>
+      <section class="device" aria-label="Мемный симулятор Орих Експолид">
+        <div class="device-top"><span>ОРИХ ОС // СБОРКА 3000</span><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+        <div id="sim-ui">
+          <div class="orb" id="orb" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="m13 2-9 12h7l-1 8 10-13h-7l0-7z"/></svg></div>
+          <h2 id="heading">МАФОН ГОТОВ К ОРИХУ?</h2><p class="subtitle" id="subheading">Один тап до легендарного джалабарака.</p>
+          <div class="progress-wrap" id="progress-wrap"><div class="progress-line"><span id="stage">Подготовка...</span><strong id="percent">0%</strong></div><div class="progress-track" role="progressbar" aria-label="Прогресс симуляции" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progressbar"><div class="progress-fill" id="fill"></div></div></div>
+          <button type="button" class="btn" id="start" aria-label="Запустить шуточный Орих Експолид"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m7 4 13 8-13 8V4Z"/></svg><span id="button-text">ЗАПУСТИТЬ ОРИХ ЕКСПОЛИД</span></button>
+          <div id="terminal" class="terminal" role="log" aria-live="off"></div><button type="button" class="btn turbo" id="turbo">⚡ ТУРБО ОРИХ — УСКОРИТЬ ДЖАЛАБАРАК</button><div class="music-note" id="music-note">🎵 Играет ОРИХ-МУЗЫКА №1</div><div class="status" id="status">Работает на любом мафоне • Скачивать ничего не надо</div>
+        </div>
+        <div class="reveal" id="reveal" aria-live="polite"><div class="emoji">💀</div><p style="font-size:12px;font-weight:800;letter-spacing:.2em;color:#75f6d2;margin:0">ОРИХ ДЖАЛ УСТАНОВЛЕН</p><h2>ВСЕ ТВИЙ МАФОН ОРИХ ДЖАЛАБАРАК</h2><p><strong>МАФОН ТЕПЕРЬ ЛЕГЕНДА.</strong> 🥒💀<br>Орих-ядро одобрило твою ауру. +9999 к рофлам.</p><button class="btn restart" id="restart" type="button">↻ ОРИХНУТЬ ЕЩЁ РАЗ</button><small>Это рофл-сайт, а не настоящий джейлбрейк. Настройки и файлы телефона не менялись.</small></div>
+      </section>
+    </main><footer><span>Сделано для мемов, а не для взлома · <span id="year">2026</span></span><span class="author">Автор: xanaxx55</span></footer>
+  </div>
+  <div class="audio-unlock" id="audio-unlock" hidden><div class="audio-note"><strong>🥒 ОРИХ-МУЗЫКА ЖДЁТ</strong>Браузер заблокировал автозапуск. Один тап — и всё заорёт.</div><button type="button" id="unlock-audio">🔊 ВРУБИТЬ</button></div>
+  <!-- Треки: №1 — вход (повтор), №2 — джалабарак, №3 — успех. -->
+  <audio id="music-player" loop preload="auto" playsinline src="1.mp3"></audio>
+<script>
+  'use strict';
+  const $ = id => document.getElementById(id);
+  $('year').textContent = String(new Date().getFullYear());
+  const entries = [
+    {p:3,t:'Орихизация мафона',line:'[ОРИХ] Подключаем мафон к вселенной...',cls:''},
+    {p:10,t:'Поиск орехового ядра',line:'[ЯДРО] Найден орех. Подозрительно мощный.',cls:'special'},
+    {p:18,t:'Сканирование ауры',line:'[СКАНЕР] Аура владельца: 9999 из 10.',cls:''},
+    {p:26,t:'Запуск ОРИХ ЕКСПОЛИДА',line:'[ЭКСПОЛИД] Загружаем ореховый эксполоид...',cls:'special'},
+    {p:34,t:'Вскрытие пельменного ядра',line:'[СИСТЕМА] Пельмень сопротивляется. Продолжаем.',cls:'warn'},
+    {p:42,t:'Проверка статуса мафона',line:'[ПРОВЕРКА] Мафон: реально мафон.',cls:''},
+    {p:51,t:'Установка джалабарака',line:'[ДЖАЛ] Скачиваем 1488 гигабайт рофлов...',cls:''},
+    {p:60,t:'Оптимизация огурца',line:'[ОГУРЕЦ] Огуречный модуль отвечает: ХРУМ 🥒',cls:'special'},
+    {p:69,t:'Важная ошибка',line:'[ОШИБКА] Слишком много крутости. Игнорируем.',cls:'warn'},
+    {p:77,t:'Включение турборежима',line:'[ТУРБО] Разгоняем тапочки до скорости света...',cls:''},
+    {p:86,t:'Ориховое заклинание',line:'[МАГИЯ] ОРИХ ОРИХ ДЖАЛАБАРАК!!!',cls:'special'},
+    {p:94,t:'Финальный прикол',line:'[ГОТОВНОСТЬ] Мафон проходит мемную сертификацию...',cls:'warn'},
+    {p:100,t:'ДЖАЛАБАРАК ГОТОВ',line:'[УСПЕХ] ВСЕ ТВИЙ МАФОН ОРИХ ДЖАЛАБАРАК 💀',cls:'special'}
+  ];
+  // Один аудиоплеер на все треки — важно для Safari на iPhone.
+  const player = $('music-player');
+  const musicSrc = {intro:'1.mp3',work:'2.mp3',success:'3.mp3'};
+  const musicNames = {intro:'🎵 Играет ОРИХ-МУЗЫКА №1 (по кругу)', work:'🎵 Играет ДЖАЛАБАРАК-ТРЕК №2',success:'🎵 Играет ГИМН УСПЕХА №3'};
+  let currentTrack = 'intro';
+  let soundOn = true;
+  let timer = null, index = 0, startedAt = 0, finishing = false;
+  // Второй трек длится около 66 секунд. Обычный джалабарак длится почти весь трек.
+  const WORK_MS = 65000;
+
+  function setMusicLabel(){
+    $('music-note').textContent = soundOn ? musicNames[currentTrack] : '🔇 Музыка выключена';
+    $('sound-toggle').textContent = soundOn ? '🔊 ЗВУК ВКЛ' : '🔇 ЗВУК ВЫКЛ';
+    $('sound-toggle').setAttribute('aria-pressed', String(soundOn));
+  }
+  function hideUnlock(){ $('audio-unlock').hidden = true; }
+  function playMusic(key){
+    currentTrack = key;
+    player.pause();
+    if(player.dataset.track !== key){
+      player.src=musicSrc[key];player.loop=(key==='intro');player.dataset.track=key;
+      player.load();
+    }
+    setMusicLabel();
+    if(!soundOn){ hideUnlock();return; }
+    try{player.currentTime=0;}catch(e){}
+    const result=player.play();
+    if(result && typeof result.then==='function'){
+      result.then(()=>hideUnlock()).catch(()=>{
+        // Safari/Chrome не разрешают громкий автозапуск до первого нажатия.
+        if(currentTrack===key && soundOn) $('audio-unlock').hidden=false;
+      });
+    }
+  }
+  $('unlock-audio').addEventListener('click',()=>playMusic(currentTrack));
+  $('sound-toggle').addEventListener('click',()=>{
+    soundOn=!soundOn;
+    if(soundOn) playMusic(currentTrack);
+    else {player.pause();hideUnlock();setMusicLabel();}
+  });
+  function addLine(message, cls=''){
+    const line=document.createElement('div');if(cls) line.className=cls;
+    line.textContent=message; $('terminal').append(line);$('terminal').scrollTop=$('terminal').scrollHeight;
+  }
+  function setProgress(p){
+    $('percent').textContent=p+'%';$('fill').style.width=p+'%';
+    $('progressbar').setAttribute('aria-valuenow',String(p));
+  }
+  function finish(){
+    if(finishing)return;
+    finishing=true;clearInterval(timer);timer=null;
+    setProgress(100);$('stage').textContent='ДЖАЛАБАРАК ГОТОВ';
+    addLine('[УСПЕХ] ВСЕ ТВИЙ МАФОН ОРИХ ДЖАЛАБАРАК 💀','special');
+    setTimeout(()=>{
+      $('sim-ui').hidden=true;$('reveal').style.display='block';
+      playMusic('success');
+    },550);
+  }
+  function advance(){
+    const elapsed=Date.now()-startedAt;
+    const fraction=Math.min(1,elapsed/WORK_MS);
+    const target=Math.min(entries.length-1,Math.floor(fraction*(entries.length-1)));
+    while(index<=target && index<entries.length-1){
+      const item=entries[index++];$('stage').textContent=item.t;addLine(item.line,item.cls);
+    }
+    setProgress(Math.min(99,Math.floor(fraction*100)));
+    if(fraction>=1)finish();
+  }
+  $('start').addEventListener('click',()=>{
+    if(timer || finishing)return;
+    playMusic('work');
+    $('start').disabled=true;$('button-text').textContent='ОРИХ ИДЁТ, НЕ МЕШАЙ';$('heading').textContent='ОРИХУЕМ МАФОН...';$('subheading').textContent='Пельменное ядро под контролем. Наверное.';
+    $('progress-wrap').style.display='block';$('terminal').style.display='block';$('turbo').style.display='flex';$('terminal').textContent='';$('status').textContent='Шуточная анимация. На телефоне ничего не меняется.';
+    addLine('> орих --эксполид --мафон','dim');addLine('> Запускаем режим ДЖАЛАБАРАК...','dim');
+    index=0;startedAt=Date.now();advance();timer=setInterval(advance,140);
+  });
+  $('turbo').addEventListener('click',finish);
+  $('restart').addEventListener('click',()=>{
+    clearInterval(timer);timer=null;index=0;finishing=false;
+    $('reveal').style.display='none';$('sim-ui').hidden=false;
+    $('heading').textContent='МАФОН ГОТОВ К ОРИХУ?';$('subheading').textContent='Один тап до легендарного джалабарака.';
+    $('progress-wrap').style.display='none';$('terminal').style.display='none';$('terminal').textContent='';$('turbo').style.display='none';
+    $('start').disabled=false;$('button-text').textContent='ЗАПУСТИТЬ ОРИХ ЕКСПОЛИД';$('status').textContent='Работает на любом мафоне • Скачивать ничего не надо';
+    setProgress(0);$('stage').textContent='Подготовка...';
+    playMusic('intro');
+  });
+  // Пробуем включить первый трек сразу. На iPhone понадобится тап по кнопке «ВРУБИТЬ».
+  playMusic('intro');
+
+</script>
+</body>
+</html>
